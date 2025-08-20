@@ -16,7 +16,7 @@
 - `http://md.sju.edu.tw/homepage/data.php`
 
 > 以上 URL 的共同點：以 `tpl` 參數回顯內容，且未做適當輸出編碼/過濾。
-
+(已修復)
 ---
 
 ## 三、漏洞細節（Technical Details）

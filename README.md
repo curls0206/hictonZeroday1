@@ -11,8 +11,10 @@
 > 僅供**本機/可控環境**安全測試使用，請勿用於第三方站點。
 
 ## 1) 啟動內建 PHP 伺服器
+```bash
 docker run --rm -it -p 8000:8000 -v "${PWD}:/srv" -w /srv php:8.2-cli php -S 0.0.0.0:8000
 docker run --rm -it -p 8000:8000 -v "%cd%:/srv" -w /srv php:8.2-cli php -S 0.0.0.0:8000(上面失敗的話)
+```
 ```bash
 php -S 127.0.0.1:8000
 ```
