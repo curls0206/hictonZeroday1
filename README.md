@@ -1,6 +1,6 @@
 # hictonZeroday1（SJU `data.php?tpl=...` 同款結構）
 
-這個專案重現https://zeroday.hitcon.org/vulnerability/ZD-2025-00613：
+這個專案重現https://zeroday.hitcon.org/vulnerability/ZD-2025-00613
 `data.php` 以 `tpl` 參數反射，
 包含：
 - `data.php`：未修復（汙染版）
